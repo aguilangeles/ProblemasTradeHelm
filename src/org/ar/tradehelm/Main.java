@@ -9,38 +9,39 @@ package org.ar.tradehelm;
  *
  * @author maria
  */
-public class ProblemasTradeHelm {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        /*==========================================================================================
-         primer problema:
-         ==========================================================================================*/
+
+        System.out.println("=================primer problema====================\n\n");
 
         Problem1 smallfrog = new Problem1();
 
         int solution = smallfrog.solution(10, 30, 85);
 
         System.out.println("la cantidad de saltos que deberá dar la rana es "
-                + solution);
+                + solution+"\n");
+
+        System.out.println("===================fin del primer problema==========\n\n\n");
 
 //       FIN DEL PRIMER PROBLEMA
-        /*=========================================================================================
-         Segundo problema
-         ============================================================================*/
+        System.out.println("=======================segundo problema================\n\n");
         int size = 4;
 
         Problem2 missedNumber = new Problem2(size);
 
         int[] numbers = missedNumber.getZeroIndex();
 
-        System.out.println("Numeros en el array " + missedNumber.toString());
+        System.out.println("Numeros en el array " + missedNumber.toString()+"\n");
 
         int solution2 = missedNumber.solution(numbers, size);
 
-        System.out.println("El número faltante es: " + solution2);
+        System.out.println("El número faltante es: " + solution2+"\n");
+
+        System.out.println("==============fin del segundo problema ============================");
 
 //        FIN DEL SEGUNDO PROBLEMA
     }
